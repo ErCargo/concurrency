@@ -23,7 +23,7 @@ public class ConcurrencyApplication implements WebMvcConfigurer {
 	public FilterRegistrationBean httpFilter(){
 		FilterRegistrationBean registrationBean = new FilterRegistrationBean();
 		registrationBean.setFilter(new HttpFilter());
-		registrationBean.addUrlPatterns("/threadLocal/*");
+		//registrationBean.addUrlPatterns("/threadLocal/*");
 		return registrationBean;
 	}
 
