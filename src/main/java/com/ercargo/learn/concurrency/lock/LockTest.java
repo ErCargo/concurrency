@@ -1,5 +1,6 @@
 package com.ercargo.learn.concurrency.lock;
 
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -10,6 +11,8 @@ import java.util.concurrent.locks.ReentrantLock;
 public class LockTest implements Runnable {
     private int tickets = 10;
     private Lock lock = new ReentrantLock();
+
+    ConcurrentHashMap
 
     @Override
     public void run() {
