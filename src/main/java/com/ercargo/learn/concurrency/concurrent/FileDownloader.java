@@ -1,9 +1,9 @@
 package com.ercargo.learn.concurrency.concurrent;
 
-import com.ercargo.ercargohouse.concurrent.download.api.Connection;
-import com.ercargo.ercargohouse.concurrent.download.api.ConnectionManager;
-import com.ercargo.ercargohouse.concurrent.download.api.DownloadListener;
-import org.apache.coyote.http2.ConnectionException;
+
+import com.ercargo.learn.concurrency.concurrent.download.api.Connection;
+import com.ercargo.learn.concurrency.concurrent.download.api.ConnectionManager;
+import com.ercargo.learn.concurrency.concurrent.download.api.DownloadListener;
 
 import java.util.concurrent.CyclicBarrier;
 
@@ -35,20 +35,15 @@ public class FileDownloader {
         });
 
         Connection conn = null;
-        try {
-            conn = cm.open(this.url);
-            int length = conn.getContentLength();
-            creatPlaceHolderFile(this.localFile, length);
+        conn = cm.open(this.url);
+        int length = conn.getContentLength();
+        creatPlaceHolderFile(this.localFile, length);
 
-            /**
-             * 给每个线程分配开始和结束位置
-             */
-            int[][] ranges = allocateDownloadRange(DOWNLOAD_THREAD_NUM, length);
+        /**
+         * 给每个线程分配开始和结束位置
+         */
+        int[][] ranges = allocateDownloadRange(DOWNLOAD_THREAD_NUM, length);
 
-
-        } catch (ConnectionException e) {
-            e.printStackTrace();
-        }
 
     }
 

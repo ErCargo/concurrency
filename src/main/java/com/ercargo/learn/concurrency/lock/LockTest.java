@@ -12,7 +12,7 @@ public class LockTest implements Runnable {
     private int tickets = 10;
     private Lock lock = new ReentrantLock();
 
-    ConcurrentHashMap
+    //ConcurrentHashMap
 
     @Override
     public void run() {

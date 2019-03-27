@@ -1,6 +1,7 @@
 package com.ercargo.learn.concurrency.algrithm;
 
-import org.thymeleaf.util.StringUtils;
+
+import org.apache.commons.lang.StringUtils;
 
 /**
  * @author ercargo  on 2019/1/28

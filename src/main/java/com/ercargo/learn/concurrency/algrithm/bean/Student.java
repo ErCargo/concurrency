@@ -4,7 +4,7 @@ package com.ercargo.learn.concurrency.algrithm.bean;
  * @author ercargo  on 2019/1/23
  * @DESCRIBE
  */
-public class Student {
+public class Student extends User {
     private String name;
     private double score;
 
