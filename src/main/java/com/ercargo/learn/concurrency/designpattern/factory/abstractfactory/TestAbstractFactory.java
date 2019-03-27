@@ -10,7 +10,6 @@ public class TestAbstractFactory {
         Gun gun;
         Bullet bullet;
 
-
         factory = new AKFactory();
         bullet = factory.productBullet();
         bullet.load();
