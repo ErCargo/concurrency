@@ -2,7 +2,7 @@ package com.ercargo.learn.concurrency.algrithm.structure;
 
 /**
  * @author ercargo  on 2019/1/28
- * @DESCRIBE
+ * @DESCRIBE 二分搜索树
  */
 public class BinaryTreeNode<T extends Comparable> {
     private T data;

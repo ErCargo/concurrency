@@ -1,4 +1,4 @@
-package com.ercargo.learn.concurrency.singleton;
+package com.ercargo.learn.concurrency.designpattern.singleton;
 
 /**
  * @author ercargo  on 2019/3/20
