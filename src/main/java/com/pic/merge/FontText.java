@@ -1,3 +1,5 @@
+package com.pic.merge;
+
 /**
  * @author ercargo  on 2019/5/10
  * @DESCRIBE

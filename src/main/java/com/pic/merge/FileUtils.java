@@ -1,3 +1,5 @@
+package com.pic.merge;
+
 import org.apache.commons.lang.StringUtils;
 
 import java.io.*;

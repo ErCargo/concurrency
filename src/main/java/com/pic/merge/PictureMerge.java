@@ -1,3 +1,5 @@
+package com.pic.merge;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -7,7 +9,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Date;
 import java.util.Properties;
 
 import javax.imageio.ImageIO;
@@ -243,7 +244,7 @@ public class PictureMerge {
             int startY = h1 / 2 - h2 / 2 - h2 * 4 - 20;
             destImg = mergeImage(destImg, bi3, true, startX, startY);
             /**为图片添加昵称*/
-            //destImg = drawTextInImg(destImg, new FontText(EmojiUtils.filterName(nickname), 3, "#FFFFF", 25, "宋体"), (fw1 / 2 - fw2 / 2) * 3 - 80, (fh1 / 2 - fh2 - 150));
+            //destImg = drawTextInImg(destImg, new com.pic.merge.FontText(EmojiUtils.filterName(nickname), 3, "#FFFFF", 25, "宋体"), (fw1 / 2 - fw2 / 2) * 3 - 80, (fh1 / 2 - fh2 - 150));
         } catch (IOException e) {
             e.printStackTrace();
         }

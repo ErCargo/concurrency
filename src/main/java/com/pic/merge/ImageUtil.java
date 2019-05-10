@@ -1,3 +1,5 @@
+package com.pic.merge;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
