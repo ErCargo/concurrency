@@ -5,4 +5,7 @@ package com.ercargo.restart;
  * @DESCRIBE
  */
 public class ConnectionManager {
+    public static void main(String[] args){
+
+    }
 }
